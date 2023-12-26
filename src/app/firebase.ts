@@ -39,6 +39,7 @@ if (typeof window !== undefined) {
 
                 getToken(messaging, { vapidKey }).then((currentToken) => {
                     if (currentToken) {
+                        alert(currentToken)
                         console.log('Current token', currentToken)
                     } else {
                         // Show permission request UI
